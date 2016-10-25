@@ -1,6 +1,6 @@
 // @flow
 
-type FunctionalComponent<Props> = (props:Props) => React$Element<*>|null;
+export type FunctionalComponent<Props> = (props:Props) => React$Element<*>|null;
 
 function logOnRender<FirstOrderProps>(FirstOrderComponent:FunctionalComponent<FirstOrderProps>):FunctionalComponent<FirstOrderProps> {
   return function NewComponent(firstOrderProps:FirstOrderProps) {
