@@ -21,16 +21,4 @@ function logOnRender<FirstOrderProps>(FirstOrderComponent:FunctionalComponent<Fi
 
 const LoggedProfile = logOnRender(Profile);
 
-const badProfile = (
-  <LoggedProfile
-    username={1234}
-    onEdit={"not implemented yet"}
-  />
-);
-
-const goodProfile = (
-  <LoggedProfile
-    username={"pcardune"}
-    onEdit={() => console.log("not implemented yet")}
-  />
-);
+export default LoggedProfile;
