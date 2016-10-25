@@ -19,6 +19,6 @@ function logOnRender<FirstOrderProps>(FirstOrderComponent:FunctionalComponent<Fi
   }
 }
 
-const LoggedProfile = logOnRender(Profile);
+const LoggedProfile:FunctionalComponent<ProfileProps> = logOnRender(Profile);
 
 export default LoggedProfile;
