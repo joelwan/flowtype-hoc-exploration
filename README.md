@@ -39,3 +39,8 @@ When using LoggedProfile from a different file, I get an error I don't understan
 
 
     Found 1 error
+
+Separating logOnRender into its own file gives me 0 errors which is not expected:
+
+    $ npm run -s flow
+    No errors!
