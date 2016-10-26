@@ -4,7 +4,8 @@ import type { FunctionalComponent } from "./logOnRender";
 
 
 type ProfileProps = {username:string, onEdit:Function}
-function Profile(props:{username:string, onEdit:Function}) {
+
+function Profile(props:ProfileProps) {
   return (
     <div>
       Your Username: {props.username}
