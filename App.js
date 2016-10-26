@@ -1,17 +1,19 @@
 // @flow
-import LoggedProfile from "./Profile";
+import HideableProfile from "./Profile";
 
 
 const badProfile = (
-  <LoggedProfile
+  <HideableProfile
     username={1234}
     onEdit={"not implemented yet"}
+    hide="yes"
   />
 );
 
 const goodProfile = (
-  <LoggedProfile
+  <HideableProfile
     username={"pcardune"}
     onEdit={() => console.log("not implemented yet")}
+    hide={true}
   />
 );

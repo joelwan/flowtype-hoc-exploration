@@ -1,9 +1,12 @@
 // @flow
-import logOnRender from "./logOnRender";
-import type { FunctionalComponent } from "./logOnRender";
+import hideable from "./hideable";
+import type { FunctionalComponent, HideableProps } from "./hideable";
 
 
-type ProfileProps = {username:string, onEdit:Function}
+type ProfileProps = {
+  username:string,
+  onEdit:Function,
+};
 
 function Profile(props:ProfileProps) {
   return (
@@ -14,6 +17,6 @@ function Profile(props:ProfileProps) {
   );
 }
 
-const LoggedProfile:FunctionalComponent<ProfileProps> = logOnRender(Profile);
+const HideableProfile:FunctionalComponent<ProfileProps&HideableProps> = hideable(Profile);
 
-export default LoggedProfile;
+export default HideableProfile;
