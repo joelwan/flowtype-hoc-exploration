@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "flow": "flow"
+  },
+  "devDependencies": {
+    "flow-bin": "0.33.0"
+  }
+}
