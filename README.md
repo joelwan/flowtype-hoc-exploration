@@ -9,3 +9,5 @@ A repository to play around with flowtype and higher-order react components.
  - diff: works
  - classy-subtractive: works, but how to break up into separate files?
  - simplified-functional-subtractive: works!
+ - simplified-classy-subtractive: works!
+ - simplified-general-subtractive: has un-understood errors
